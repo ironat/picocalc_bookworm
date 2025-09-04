@@ -17,12 +17,19 @@ Update /boot/firmware/config.txt
 # Some settings may impact device functionality. See link above for details
 
 # Uncomment some or all of these to enable the optional hardware interfaces
-#dtparam=i2c_arm=on
+#FOR KEYBOARD
+dtparam=i2c_arm=on
+dtoverlay=picocalc_kbd
+
 #dtparam=i2s=on
+
+# FOR DISPLAY
 dtparam=spi=on
 
 # Enable audio (loads snd_bcm2835)
+# FOR AUDIO
 dtparam=audio=on
+dtoverlay=audremap,pins_12_13
 
 # Additional overlays and parameters are documented
 # /boot/firmware/overlays/README
@@ -33,6 +40,7 @@ camera_auto_detect=1
 # Automatically load overlays for detected DSI displays
 display_auto_detect=1
 
+#FOR DISPLAY
 #Display
 dtoverlay=spi0-1cs
 dtoverlay=picodisplay
