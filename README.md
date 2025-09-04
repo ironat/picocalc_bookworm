@@ -19,7 +19,7 @@ Update /boot/firmware/config.txt
 # Uncomment some or all of these to enable the optional hardware interfaces
 #dtparam=i2c_arm=on
 #dtparam=i2s=on
-**dtparam=spi=on**
+dtparam=spi=on
 
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
@@ -34,8 +34,8 @@ camera_auto_detect=1
 display_auto_detect=1
 
 #Display
-**dtoverlay=spi0-1cs
-dtoverlay=picodisplay**
+dtoverlay=spi0-1cs
+dtoverlay=picodisplay
 
 # Automatically load initramfs files, if found
 auto_initramfs=1
