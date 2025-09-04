@@ -52,30 +52,29 @@
 
                                 // see drivers/staging/fbtft/fb_ili9341.c:init_display() for how this looks in the driver
                                 // Command 0x36 is taken from the fb_ili9341.c:set_var() function.
-                                init = <0x1000001
+                                 init = <0x1000001
                                         0x2000005
                                         0x1000028
                                         0x10000cf 0x00 0x83 0x30
                                         0x10000ed 0x64 0x03 0x12 0x81
                                         0x10000e8 0x85 0x01 0x79
                                         0x10000cb 0x39 0x2c 0x00 0x34 0x02
-                                        0x10000f7 0x20
                                         0x10000ea 0x00 0x00
-                                        0x10000c0 0x26
-                                        0x10000c1 0x11
-                                        0x10000c5 0x35 0x3e
-                                        0x10000c7 0xbe
+                                        0x10000c0 0x17 0x15
+                                        0x10000c1 0x41
+                                        0x10000c5 0x00 0x12 0x80
+                                        0x1000036 0x48
                                         0x100003a 0x55
-                                        0x1000036 0x28
-                                        0x10000b1 0x00 0x1b
-                                        0x1000026 0x04
-                                        0x10000f2 0x08
-                                        0x1000026 0x04
+                                        0x10000b0 0x00
+                                        0x10000b1 0xd0 0x11
+                                        0x1000021
+                                        0x10000b4 0x02
+                                        0x10000b6 0x02 0x02 0x3b
+                                        0x10000b7 0xc6
+                                        0x10000e9 0x00
+                                        0x10000f7 0xa9 0x51 0x2c 0x82
                                         0x10000e0 0x00 0x03 0x09 0x08 0x16 0x0a 0x3f 0x78 0x4c 0x09 0x0a 0x08 0x16 0x1a 0x0f
                                         0x10000e1 0x00 0x16 0x19 0x03 0x0f 0x05 0x32 0x45 0x46 0x04 0x0e 0x0d 0x35 0x37 0x0f
-                                        0x10000b7 0x07
-                                        0x10000b6 0x0a 0x82 0x27 0x00
-                                        0x1000021
                                         0x1000011
                                         0x2000064
                                         0x1000029
