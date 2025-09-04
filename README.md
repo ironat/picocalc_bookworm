@@ -1,8 +1,18 @@
-This project uses partly the https://github.com/wasdwasd0105/picocalc-pi-zero-2 project:
+This poject allows to install bookworm and use it on the Picocalc with the Zero Mod.
+
+This project uses partly the https://github.com/wasdwasd0105/picocalc-pi-zero-2 project.
 
 Follow his keyboard setup and audio setup but not the display part!
 
+Remember you must but the dtoverlay for the keyboard in the /boot/firmware/config.txt. The script put it into the /boot/config.txt
+```
+dtparam=i2c_arm=on
+dtoverlay=picocalc_kbd
+```
+
+
 Do compile the overlay for the display
+
 ```
 git clone https://github.com/ironat/picocalc_bookworm
 cd picocalc_bookworm
