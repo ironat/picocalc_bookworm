@@ -84,7 +84,11 @@ dtoverlay=dwc2,dr_mode=host
 [all]
 ```
 
+Last step add "fbcon=map:10" to /boot/fimware/cmdline.txt
 
+```
+console=serial0,115200 console=tty1 root=PARTUUID=568f209b-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=AT fbcon=map:10
+```
 
 
 
