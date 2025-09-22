@@ -1,5 +1,10 @@
 This poject allows to install bookworm and use it on the Picocalc with the Zero Mod.
 
+THIS IS W.I.P.!
+
+* FBDEV is not working with SDL, Mplayer
+
+
 This project uses partly the https://github.com/wasdwasd0105/picocalc-pi-zero-2 project.
 
 Follow his keyboard setup and audio setup but not the display part!
