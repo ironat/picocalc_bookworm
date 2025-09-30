@@ -1,3 +1,5 @@
+
+
 This poject allows to install bookworm and use it on the Picocalc with the Zero Mod.
 
 THIS IS W.I.P.!
@@ -54,6 +56,8 @@ camera_auto_detect=1
 
 # Automatically load overlays for detected DSI displays
 display_auto_detect=1
+
+# Normal Display driver:
 
 #FOR DISPLAY
 #Display
