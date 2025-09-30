@@ -2,7 +2,7 @@
 
 This poject allows to install bookworm and use it on the Picocalc with the Zero Mod.
 
-THIS IS W.I.P.!
+# THIS IS W.I.P.!
 
 * FBDEV is not working with SDL, Mplayer
 
@@ -17,7 +17,7 @@ dtparam=i2c_arm=on
 dtoverlay=picocalc_kbd
 ```
 
-
+# Display without DRM
 Do compile the overlay for the display
 
 ```
@@ -98,6 +98,18 @@ Last step add "fbcon=map:10" to /boot/fimware/cmdline.txt
 ```
 console=serial0,115200 console=tty1 root=PARTUUID=568f209b-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=AT fbcon=map:10
 ```
+# Display with DRM
 
-
-
+```
+git clone https://github.com/ironat/picocalc_bookworm
+cd picocalc_bookworm
+dtc -I dts -O dtb -o picoscreen.dtbo picoscreen.dts
+sudo cp picoscreen.dtbo /boot/overlays/.
+```
+Update /boot/firmware/config.txt Its mostly the sameas above only dtoverlay=picoscreen and dtparam ist different
+```
+#Display
+dtoverlay=spi0-1cs
+dtoverlay=picoscreen
+dtparam=drm,no_miso,write-only,cpha,cpol
+```
