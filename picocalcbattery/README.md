@@ -1,6 +1,6 @@
 # Only tested with Bullseye!!
 
-A LXpanel plugin which displays picocalcbattery in Panel.
+A LXpanel plugin which displays picocalcbattery status on the panel.
 This is written for Raspbian but should work on any Linux using LXpanel.
 
 To install plugin on the Raspberry Pi run either (32 bit)
@@ -13,6 +13,7 @@ or (64 bit)
 
 Either restart or run `lxpanelctl restart` to make LXDE aware it is installed.
 
+# compile
 execute compile.sh
 ```
 >./compile.sh
