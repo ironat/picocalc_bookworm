@@ -17,3 +17,5 @@ execute compile.sh
 ```
 >./compile.sh
 ```
+<img width="630" height="714" alt="Screenshot 2025-10-02 010223" src="https://github.com/user-attachments/assets/698433aa-4c6b-4448-ad94-cb1f17be873b" />
+<img width="797" height="670" alt="Screenshot 2025-10-02 010146" src="https://github.com/user-attachments/assets/c78d98fe-d354-4bfb-8bd4-2d9b7abe4169" />
