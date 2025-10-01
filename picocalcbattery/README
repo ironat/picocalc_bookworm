@@ -1,4 +1,4 @@
-#Only tested with Bullseye
+Only tested with Bullseye!!
 
 A LXpanel plugin which displays picocalcbattery in Panel.
 This is written for Raspbian but should work on any Linux using LXpanel.
