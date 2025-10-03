@@ -113,3 +113,24 @@ dtoverlay=spi0-1cs
 dtoverlay=picoscreen
 dtparam=drm,no_miso,write-only,cpha,cpol
 ```
+# Display with MIPI_DPI_SPI
+```
+git clone https://github.com/ironat/picocalc_bookworm
+cd picocalc_bookworm
+sudo cp picomipi.bin /lib/firmware/.
+```
+Update /boot/firmware/config.txt Its mostly the sameas above only dtoverlay=picoscreen and dtparam ist different
+```
+dtoverlay=mipi-dbi-spi,spi0-0
+dtparam=compatible=picomipi\0panel-mipi-dbi-spi
+dtparam=width=320,height=320,width-mm=43,height-mm=43
+dtparam=reset-gpio=25,dc-gpio=24
+dtparam=backlight-gpio=18
+```
+Do convert the init file picomipi.txt to picomipi bin you need pythonscript:
+```
+git clone https://github.com/notro/panel-mipi-dbi/
+cd panel-mipi-dbi/
+./mipi-dbi-cmd picomipi.bin picomipi.txt
+sudo cp picomipi.bin /lib/firmware/.
+```
