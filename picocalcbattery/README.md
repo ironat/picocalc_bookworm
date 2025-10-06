@@ -3,6 +3,7 @@
 ## Update your Keyboard Firmware! ( at least PicoCalc_BIOS_v1.2.bin)
 https://github.com/clockworkpi/PicoCalc/wiki/Setting-Up-Arduino-Development-for-PicoCalc-keyboard#stm32cubeprogrammer
 
+## What is it?
 A LXpanel plugin which displays picocalcbattery status on the panel.
 This is written for Raspbian but should work on any Linux using LXpanel.
 
