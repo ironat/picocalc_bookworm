@@ -18,6 +18,10 @@ or (64 bit)
 Either restart or run `lxpanelctl restart` to make LXDE aware it is installed.
 
 # compile
+install lxpanel-dev
+```
+sudo apt install lxpanel-dev
+```
 execute compile.sh
 ```
 >./compile.sh
