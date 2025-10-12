@@ -38,6 +38,21 @@ cd panel-mipi-dbi/
 ./mipi-dbi-cmd picomipi.bin picomipi.txt
 sudo cp picomipi.bin /lib/firmware/.
 ```
+# Keyboard
+Update /boot/firmware/config.txt
+
+```
+#FOR KEYBOARD
+dtparam=i2c_arm=on
+dtoverlay=picocalc_kbd
+```
+# Audio
+Update /boot/firmware/config.txt
+````
+# FOR AUDIO
+dtparam=audio=on
+dtoverlay=audremap,pins_12_13
+````
 ----------------------------------------
 ### Old Stuff (please ignore)
 
